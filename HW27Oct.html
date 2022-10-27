@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GRID AREAS</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html,
+      body,
+      .wrapper {
+        height: 100%;
+      }
+
+      .wrapper {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas:
+          "cell1 cell2 cell2 cell3"
+          "cell1 cell4 cell5 cell6"
+          "cell1 cell7 cell8 cell6";
+        gap: 10px;
+      }
+      .cell1 {
+        grid-area: cell1;
+        background: rgb(13, 134, 128);
+      }
+      .cell2 {
+        grid-area: cell2;
+        background: rgb(13, 134, 128);
+      }
+      .cell3 {
+        grid-area: cell3;
+        background: rgb(46, 161, 94);
+      }
+      .cell4 {
+        grid-area: cell4;
+        background: rgb(96, 70, 104);
+      }
+      .cell5 {
+        grid-area: cell5;
+        background: rgb(46, 161, 94);
+      }
+      .cell6 {
+        grid-area: cell6;
+        background: rgb(13, 134, 128);
+      }
+      .cell7 {
+        grid-area: cell7;
+        background: rgb(46, 161, 94);
+      }
+      .cell8 {
+        grid-area: cell8;
+        background: rgb(96, 70, 104);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="cell1"></div>
+      <div class="cell2"></div>
+      <div class="cell3"></div>
+      <div class="cell4"></div>
+      <div class="cell5"></div>
+      <div class="cell6"></div>
+      <div class="cell7"></div>
+      <div class="cell8"></div>
+    </div>
+  </body>
+</html>
