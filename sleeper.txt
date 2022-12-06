@@ -1,0 +1,11 @@
+pwd
+  1  ls
+  2  date
+  3  touch sleeper.sh
+  4  for date in {1..10}; do date $run; sleep 5; done
+  5  nano sleeper.sh
+  6  pwd
+  7  for run in {50..100}; do touch $run; done
+  8  history > history.txt
+
+Со слипером в nano поигралась и разобралась, файлы создались в папке, а вот с записью информации о процессоре и операционке не получилось :(
